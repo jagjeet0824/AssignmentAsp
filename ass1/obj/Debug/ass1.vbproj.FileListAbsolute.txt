@@ -92,3 +92,7 @@ C:\Users\kobe\source\repos\ass1\ass1\obj\Debug\ass1.vbproj.CoreCompileInputs.cac
 C:\Users\kobe\source\repos\ass1\ass1\obj\Debug\ass1.dll
 C:\Users\kobe\source\repos\ass1\ass1\obj\Debug\ass1.xml
 C:\Users\kobe\source\repos\ass1\ass1\obj\Debug\ass1.pdb
+C:\Users\kobe\source\repos\ass1\ass1\bin\EntityFramework.dll
+C:\Users\kobe\source\repos\ass1\ass1\bin\EntityFramework.SqlServer.dll
+C:\Users\kobe\source\repos\ass1\ass1\bin\EntityFramework.xml
+C:\Users\kobe\source\repos\ass1\ass1\bin\EntityFramework.SqlServer.xml

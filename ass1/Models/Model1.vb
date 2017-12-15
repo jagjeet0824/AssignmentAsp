@@ -7,39 +7,35 @@ Partial Public Class Model1
     Inherits DbContext
 
     Public Sub New()
-        MyBase.New("name=Assignment1")
+        MyBase.New("name=DefaultConnection")
     End Sub
 
-    Public Overridable Property Table_1 As DbSet(Of Table_1)
-    Public Overridable Property Table_2 As DbSet(Of Table_2)
+    Public Overridable Property Games As DbSet(Of Game)
+    Public Overridable Property Games2 As DbSet(Of Games2)
 
     Protected Overrides Sub OnModelCreating(ByVal modelBuilder As DbModelBuilder)
-        modelBuilder.Entity(Of Table_1)() _
-            .Property(Function(e) e.Basketball) _
-            .IsFixedLength()
+        modelBuilder.Entity(Of Game)() _
+            .Property(Function(e) e.Music) _
+            .IsUnicode(False)
 
-        modelBuilder.Entity(Of Table_1)() _
-            .Property(Function(e) e.Football) _
-            .IsFixedLength()
+        modelBuilder.Entity(Of Game)() _
+            .Property(Function(e) e.Movies) _
+            .IsUnicode(False)
 
-        modelBuilder.Entity(Of Table_1)() _
-            .Property(Function(e) e.Cricket) _
-            .IsFixedLength()
+        modelBuilder.Entity(Of Game)() _
+            .Property(Function(e) e.Playlist) _
+            .IsUnicode(False)
 
-        modelBuilder.Entity(Of Table_1)() _
-            .HasOptional(Function(e) e.Table_2) _
-            .WithRequired(Function(e) e.Table_1)
+        modelBuilder.Entity(Of Games2)() _
+            .Property(Function(e) e.Best_singer) _
+            .IsUnicode(False)
 
-        modelBuilder.Entity(Of Table_2)() _
-            .Property(Function(e) e.Ice_Hockey) _
-            .IsFixedLength()
+        modelBuilder.Entity(Of Games2)() _
+            .Property(Function(e) e.Vocal) _
+            .IsUnicode(False)
 
-        modelBuilder.Entity(Of Table_2)() _
-            .Property(Function(e) e.Rugby) _
-            .IsFixedLength()
-
-        modelBuilder.Entity(Of Table_2)() _
-            .Property(Function(e) e.Kabbadi) _
-            .IsFixedLength()
+        modelBuilder.Entity(Of Games2)() _
+            .Property(Function(e) e.Onstage) _
+            .IsUnicode(False)
     End Sub
 End Class

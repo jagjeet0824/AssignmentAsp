@@ -180,9 +180,13 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\FilterConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\Games2Controller.vb" />
+    <Compile Include="Controllers\GamesController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Game.vb" />
+    <Compile Include="Models\Games2.vb" />
     <Compile Include="Models\Model1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -241,6 +245,16 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Games\Create.vbhtml" />
+    <Content Include="Views\Games\Delete.vbhtml" />
+    <Content Include="Views\Games\Details.vbhtml" />
+    <Content Include="Views\Games\Edit.vbhtml" />
+    <Content Include="Views\Games\Index.vbhtml" />
+    <Content Include="Views\Games2\Create.vbhtml" />
+    <Content Include="Views\Games2\Delete.vbhtml" />
+    <Content Include="Views\Games2\Details.vbhtml" />
+    <Content Include="Views\Games2\Edit.vbhtml" />
+    <Content Include="Views\Games2\Index.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
